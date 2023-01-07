@@ -1,5 +1,6 @@
 /* ---global styles--- */
 :root {
+	--dark-text: #313131;
 	--light: wheat;
 	--shadow: 0 0 0.1em var(--dark-text), 0 0 0.1em var(--dark-text),
 		0 0 0.1em var(--dark-text), 0 0 0.1em var(--dark-text),
@@ -26,7 +27,7 @@ h1 {
 	font-size: 5rem;
 }
 
-.jumbotron {
+.container-fluid {
 	background: url(../images/travel-california-bg-img.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -35,8 +36,10 @@ h1 {
 	padding: 4rem;
 
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	text-align: center;
+	gap: 2rem;
 }
 
 #console {
@@ -44,25 +47,33 @@ h1 {
 	box-shadow: var(--shadow);
 	border-radius: 5px;
 	max-width: 100%;
-	padding-bottom: 2.5rem;
+	padding-bottom: 2rem;
 }
 
 .hero-right {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 	margin: 0;
+	padding: 2rem;
 }
 
 .hero-left {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
-	gap: 1.5em;
 	margin-bottom: 2rem;
+	padding: 2rem;
 }
 
 .hero-text {
 	text-shadow: var(--shadow);
+}
+
+@media screen and (max-width: 991px) {
+	.hero-left,
+	.hero-right {
+		justify-content: center;
+	}
 }
