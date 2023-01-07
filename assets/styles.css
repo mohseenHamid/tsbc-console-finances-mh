@@ -1,10 +1,6 @@
 /* ---global styles--- */
 :root {
-	--dark: #09062e;
 	--light: wheat;
-	--curve: 0.5rem;
-	--thick: 0.3rem;
-	--dark-text: #16181b;
 	--shadow: 0 0 0.1em var(--dark-text), 0 0 0.1em var(--dark-text),
 		0 0 0.1em var(--dark-text), 0 0 0.1em var(--dark-text),
 		0 0 0.1em var(--dark-text), 0 0 0.1em var(--dark-text),
